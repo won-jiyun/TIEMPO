@@ -1,0 +1,717 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'LeferiPoint-SpecialA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*title*/
+@font-face {
+    font-family: 'LeferiPoint-SpecialItalicA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-BlackA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /*날개 있는 거*/
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family: 'Balgon Serif';
+    src: url('BalgonSerif-Regular.woff2') format('woff2'),
+        url('BalgonSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Balgon';
+    src: url('BalgonBold-Bold.woff2') format('woff2'),
+        url('BalgonBold-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*애니메이션*/
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 21px;
+    color: #222;
+    /*background-color: #edece9;*/
+    min-width: 1450px;
+}
+
+
+/*1.top_bg*/
+#header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#header #top_bg {
+    position: relative;
+}
+
+#header h1 {
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 10px;
+}
+
+#header>ul {
+    display: flex;
+    justify-content: center;
+}
+
+#header>ul>li {
+    padding: 10px 40px;
+    color: rgb(99, 99, 99);
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+#header .box {
+    position: fixed;
+    width: 100%;
+    height: 1080px;
+    background-color: #f0ebe393;
+    display: none;
+}
+
+/*sub*/
+.sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+#header>ul>li {
+    position: relative;
+}
+
+.sub>li>a {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0px;
+    padding-top: 19px;
+    font-weight: normal;
+    font-family: 'LeferiPoint-BlackA';
+}
+.sub .sub_top{
+    border-top: 2px solid #8d6f5f;
+}
+.sub>li>a:hover {
+    color: #8d6f5f;
+    transition: all 0.5s;
+}
+
+
+
+/*2.story*/
+#story {
+    background-image: url(../images/main/2.story_wave3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 976px;
+}
+
+#story_inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+#story_inner .story_text {
+    float: left;
+    text-align: center;
+    padding-top: 120px;
+}
+
+#story_inner .story_text h2 {
+    padding-bottom: 72px;
+    font-size: 32px;
+    font-family: 'LeferiPoint-SpecialA';
+    font-weight: 500;
+}
+
+#story_inner .story_text p.avobe {
+    padding-bottom: 60px;
+    font-size: 19px;
+    font-family: 'LeferiPoint-SpecialItalicA';
+}
+
+#story_inner .story_text p.under {
+    padding-bottom: 50px;
+    line-height: 25px;
+    font-family: 'NotoSerifKR';
+}
+
+#story_inner .story_text p.under span {
+    color: #a08572;
+}
+
+#story_inner .story_img {
+    float: right;
+}
+
+/*!!!!MORE 버튼!!!!*/
+.more_btn {
+    display: inline-block;
+    border: 1px solid #111;
+    font-size: 18.79px;
+    font-weight: 700;
+    padding: 9px 13px;
+}
+
+
+/*3.collection*/
+#collection {
+    background-color: #e3cbb0;
+}
+
+#collection #collection_inner {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 140px 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#collection #collection_inner li {
+    float: left;
+    margin: 5px;
+}
+
+#collection #collection_inner {
+    text-align: center;
+}
+
+.col_more {
+    width: 399px;
+    position: relative;
+}
+
+.col_more a {
+    display: inline-block;
+    margin-top: 65px;
+    background-image: url(../images/main/3.collection_next\ btn.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.col_more a .col_rotaion {
+    animation: rotation 8s linear infinite;
+}
+
+.col_more a .col_rotaion:hover {
+    animation-play-state: paused;
+}
+
+.col_more p {
+    padding-top: 170px;
+    font-size: 30px;
+    font-family: 'LeferiPoint-SpecialA';
+}
+
+.col_more .col_btn {
+    position: absolute;
+    top: 312.9px;
+    left: 45%;
+}
+
+/*호버*/
+.col_hover1_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.col_hover1 {
+    position: relative;
+}
+
+.col_hover1_img {
+    opacity: 0;
+}
+
+#collection ul li:hover .col_hover1_img {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.col_hover2_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.col_hover2 {
+    position: relative;
+}
+
+.col_hover2_img {
+    opacity: 0;
+}
+
+#collection ul li:hover .col_hover2_img {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.col_hover3_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.col_hover3 {
+    position: relative;
+}
+
+.col_hover3_img {
+    opacity: 0;
+}
+
+#collection ul li:hover .col_hover3_img {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+/*4.steady seller*/
+#steady_seller {
+    padding-bottom: 65px;
+}
+
+#steady_seller .ss_inner {
+    text-align: center;
+    padding-top: 162px;
+    font-family: 'LeferiPoint-SpecialA';
+    font-size: 32px;
+    font-weight: 300;
+}
+
+#steady_seller .ss_contents {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+#steady_seller .more_btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*4.ss_슬라이드*/
+.card img {
+    width: 100%;
+}
+
+#news {
+    width: 1200px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.card {
+    padding-bottom: 50px;
+}
+
+.swiper-button-prev {
+    left: -50px;
+    right: auto;
+    top: 45%;
+}
+
+.swiper-button-next {
+    right: -50px;
+    left: auto;
+    top: 45%;
+}
+
+.card_prev::after {
+    color: #666;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card_next::after {
+    color: #666;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.arrow_position {
+    position: relative;
+}
+
+/*높이가 다른 슬라이드들을 세로 가운데가 맞게 해줌*/
+.card .swiper-wrapper {
+    align-items: center;
+}
+
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.card .swiper-slide {
+    transform: scale(0.7);
+    opacity: 0.3;
+}
+
+.card .swiper-slide-prev,
+.card .swiper-slide-next {
+    transform: scale(0.85);
+    opacity: 0.5;
+}
+
+.card .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.card .swiper-slide .text {
+    display: none;
+}
+
+.card .swiper-slide-active .text {
+    display: block;
+}
+
+
+/*5.attach*/
+#attach_bg {
+    background-image: url(../images/main/5.attachment.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 443px;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}
+
+#attach_bg h2 {
+    padding-top: 190px;
+    padding-bottom: 40px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: 'LeferiPoint-SpecialItalicA';
+}
+
+#attach_bg p {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    font-family: 'NotoSerifKR';
+}
+
+.more_btn {
+    display: inline-block;
+    border: 1px solid #111;
+    font-size: 18.79px;
+    font-weight: 700;
+    padding: 9px 13px;
+}
+
+
+/*6.exhibition*/
+#exhibition {
+    background-color: #e8e2d4;
+    width: 100%;
+    height: 1371px;
+    position: relative; 
+}
+#exhibition .width{
+    width: 960px;
+    overflow: hidden;
+}
+#exhibition .e_left {
+    position: absolute;
+    top: 0;
+    left: 0;  
+}
+#exhibition .e_right {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 260px;
+    position: relative;
+}
+
+#exhibition .e_right h2 {
+    font-size: 82.46px;
+    color: #937660;
+    font-family: 'LeferiPoint-BlackA';
+}
+
+#exhibition .e_right p {
+    padding-top: 250px;
+    padding-bottom: 80px;
+    line-height: 23px;
+    font-family: 'NotoSerifKR';
+}
+
+#exhibition .e_r_chair {
+    position: absolute;
+    bottom: -450px;
+    right: 0px;
+}
+
+#exhibition .e_r_circle {
+    position: absolute;
+    top: 563px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#exhibition .e_r_autumn {
+    position: absolute;
+    top: 319px;
+    right: 0px;
+}
+
+
+/*7.membership*/
+#membership_bg {
+    background-image: url(../images/main/7.membership_bg.png);
+    background-repeat: no-repeat;
+    height: 609px;
+    background-position: center;
+    text-align: center;
+}
+
+#membership_bg h2 {
+    padding-top: 140px;
+    font-family: 'LeferiPoint-SpecialA';
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+#membership_bg p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+#membership_bg .mem_contents {
+    padding-bottom: 50px;
+    line-height: 25px;
+}
+
+#membership_bg .mem_find {
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+#membership_bg .mem_contents span {
+    font-weight: 750;
+}
+
+#membership_bg .mem_contents .per {
+    color: rgb(238, 59, 59);
+}
+
+/*input*/
+.mem_input {
+    background-color: #fff;
+    opacity: .7;
+    width: 620px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 50px;
+    margin-bottom: 60px;
+    position: relative;
+    height: 20px;
+}
+
+.mem_input input {
+    border: none;
+    outline: none;
+    float: left;
+    line-height: 23px;
+    width: 505px;
+    margin-left: 30px;
+    border-right: 1px solid #111;
+}
+
+.mem_input a {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 19px;
+    padding: 5px 20px;
+}
+
+.mem_input input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding-left: 45px;
+}
+
+.mem_more_btn {
+    display: inline-block;
+    background-color: #fff;
+    padding: 7px 20px;
+    opacity: .7;
+    border-radius: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+
+/*8.footer*/
+#footer {
+    background-color: #e8e2d4;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.footer_inner>li {
+    float: left;
+    padding: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.footer_inner .pol>li {
+    float: left;
+    padding-right: 20px;
+}
+
+.footer_inner .pol {
+    padding-top: 30px;
+}
+
+.footer_inner .pol p {
+    padding-top: 50px;
+}
+
+.f_s_2 ul li {
+    float: left;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.f_s_2 h2 {
+    font-size: 21.6px;
+    padding-bottom: 25px;
+    color: #a08572;
+}
+
+.f_s_2 p {
+    padding-bottom: 25px;
+}
+
+.f_s_3 h2 {
+    font-size: 21.6px;
+    padding-bottom: 25px;
+    line-height: 25px;
+    color: #a08572;
+}
+
+.f_s_3 p {
+    line-height: 40px;
+}
+
+.copy {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.copy p {
+    margin-top: 40px;
+    margin-left: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #a08572;
+}
+
+/*호버*/
+.f_s_2 ul img {
+    opacity: .3;
+}
+
+.f_s_2 ul img:hover {
+    opacity: 1;
+    transition: all 0.7s;
+}
