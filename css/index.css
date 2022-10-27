@@ -457,6 +457,7 @@ body {
 #attach_bg {
     background-image: url(../images/main/5.attachment.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     height: 443px;
     background-position: center;
@@ -504,6 +505,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;  
+    width: 50%;
+    overflow: hidden;
+}
+#exhibition .e_left img{
+    overflow: hidden;
 }
 #exhibition .e_right {
     width: 1320px;

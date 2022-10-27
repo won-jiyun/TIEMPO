@@ -259,7 +259,8 @@ body {
 #promotion h2{
     position: absolute;
     top: -90px;
-    left: 858px;
+    left: 50%;
+    margin-left: -90px;
     font-size: 30px;
     font-family: 'LeferiPoint-SpecialA';
     font-weight: 500;
