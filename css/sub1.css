@@ -142,6 +142,7 @@ body {
     display: flex;
     justify-content: center;
     padding-bottom: 7px;
+    
 }
 
 .h_menu .gnb>li {
@@ -149,6 +150,7 @@ body {
     color: #222;
     font-weight: 600;
     letter-spacing: 1.2px;
+    color: #ffffff;
 }
 
 /*복사하기*/
@@ -156,7 +158,7 @@ body {
     position: fixed;
     width: 100%;
     height: 1080px;
-    background-color: #f0ebe393;
+    background-color: #f0ebe381;
     display: none;
 }
 /*sub*/
@@ -174,23 +176,23 @@ body {
 
 .sub>li>a {
     display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: 14px;
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.3);*/
+    font-size: 12.5px;
     text-align: center;
     padding: 15px 0px;
     padding-top: 19px;
     font-weight: normal;
     font-family: 'LeferiPoint-BlackA';
+    color: #695951;
 }
 .sub .sub_top{
     border-top: 2px solid #8d6f5f;
 }
 
 .sub>li>a:hover {
-    color: #8d6f5f;
+    color: #fff;
     transition: all 0.5s;
 }
-
 
 /*2.introduce*/
 #introduce {
