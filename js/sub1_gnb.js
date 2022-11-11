@@ -2,11 +2,11 @@ $(function(){
     //메인
     $(".gnb>li").mouseenter(function(){
         $(this).children(".sub").stop().slideDown();
-        $(".box").stop().fadeIn();
+        $("#header .box").stop().fadeIn();
     });//마우스올라갔을때 이벤트
     $(".gnb>li").mouseleave(function(){
         $(this).children(".sub").stop().slideUp();
-        $(".box").stop().fadeOut();
+        $("#header .box").stop().fadeOut();
 
 
     
